@@ -1,0 +1,158 @@
+body {
+	margin: 0 ;
+	width: 100%;
+	padding: 0;
+	background: #7a2122 url('../images/body_bg.gif') repeat-x top;
+	font-family: Helvetica, sans-serif;
+	font-size: 62.5%;
+	color: #333;
+}
+
+h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+ 
+p {
+	font-size: 1.4em;
+	line-height: 1.4em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:link {
+	color: #333;
+	background: #eee;
+}
+
+
+
+a:visited {
+	color: #ff0000;
+	background: #eee;
+}
+
+/* This rule adds a nice style to our ampersands */
+span.amp {
+	font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#masthead {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 800px;
+	color: #fff;
+}
+
+#masthead h1 {
+	float: left;
+}
+
+#nav {
+	float: right;
+	margin: 50px 10px 0 0;
+	font-size: 1.4em;
+}
+
+ 
+#nav li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+#nav li a {
+	color: #fff;
+	text-decoration: none;
+	background: none;
+}
+
+/*
+Because the header content is outside the mainContent <div>,
+we need to use the same "margin: 0 auto" trick to center
+the layout
+*/
+#mainContent {
+	clear: both;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	width: 800px;
+	background: #fff;
+	border: 5px solid #5c0505;
+}
+
+#titleBar img {
+	width: 100%;
+	 
+}
+
+#titleBar h1 {
+	font-size: 2em;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+	background: url('../images/tagline_bg.gif') repeat-x;
+}
+
+#content, #sidebar {
+	width: 375px;
+	height: 340px;
+	margin: 20px 0px 5px 0px;
+	padding: 10px;
+}
+
+#content {
+	float: right;
+	background: #fff; 
+}
+
+#content h2 {
+	font-size: 2.4em;
+	margin: 0 0 10px 0;
+}
+
+#content p {
+	margin: 0 0 10px 0;
+}
+
+#link-list {
+	margin: 20px 0 0 0;
+	font-size: 1.4em;
+}
+
+#link-list li {
+	margin: 0 0 10px 0;
+}
+
+#sidebar {
+	background: #EEE;
+}
+
+#sidebar h2 {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 20px 0;
+	padding: 5px;
+}
+
+#port li {
+	margin: 0 10px 20px 0;
+	float: left;
+	border: 5px solid #ddd;
+}
+
+#footer {
+	clear: both;
+	background: #eee;
+	padding: 10px;
+	border-top: 2px solid #ddd;
+	text-align: center;
+	color: #777;
+}
+ 

@@ -1,0 +1,2 @@
+git config --global user.email kfhwang@nutc.edu.tw
+git config --global user.name kfhwang
