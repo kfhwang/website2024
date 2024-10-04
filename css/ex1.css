@@ -14,3 +14,29 @@ header{
     border: solid #fff 3px;
     padding: 5px 0px 10px 0px; 
 }
+
+#menu{
+    width: 674px;
+    background: linear-gradient(#333,#000);
+    margin-left: 3px;
+    float: left;
+}
+#menu ul{
+    list-style: none;
+   padding: 0px;
+   margin-left: 100px;
+}
+#menu ul li{
+    display: inline;
+    
+}
+#menu ul li a{
+    color:#fff;
+    text-decoration: none;
+    padding-top: 0px;
+    height: 30px;
+    width: 80px;
+    float: left;
+    display: block;
+    text-align: center;
+}
