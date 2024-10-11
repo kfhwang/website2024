@@ -2,28 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bootstrap 5</title>
 </head>
 <!-- Latest compiled and minified CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-<body>
-   <div class="container bg-dark border border-3 border-danger mt-3 p-3 text-white">
-      <div>
-         <img src="images/rl_logo.png" alt="LOGO">
-         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+<body class="bg-info">
+   <div class="container bg-dark border border-3 border-info mt-3 p-3 text-white">
+      <div class="navbar navbar-expand-md d-flex justify-content-between">
+         <img class="col-4" src="images/rl_logo.png" alt="LOGO">
+         <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-white" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="">Contact</a></li>
          </ul>
       </div>
       <header>
-         <img class="img-responsive"  src="images/tokyo.jpg" width="100%">
+         <!-- <img class="img-responsive"  src="images/tokyo.jpg" width="100%"> -->
+         <!-- Carousel -->
+         <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="0" ></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img src="images/header.jpg" alt="Tokyo" class="d-block w-100">
+               </div>
+               <div class="carousel-item">
+                  <img src="images/header2.jpg" alt="Chicago" class="d-block w-100">
+               </div>
+               <div class="carousel-item">
+                  <img src="images/header3.jpg" alt="New York" class="d-block w-100">
+               </div>
+               <div class="carousel-item">
+                  <img src="images/header4.jpg" alt="New York" class="d-block w-100">
+               </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+               <span class="carousel-control-next-icon"></span>
+            </button>
+         </div>
          <p></p>
       </header>
 
@@ -31,7 +66,7 @@
          <div class="col-md-6 col-12 col-lg-4">
             <div class="row">
                <div class="col-12 col-md-6 col-lg-3">
-                  <img class="img-responsive img-thumbnail" width="100%" src="images/markinjapan.jpg" alt="" >
+                  <img class="img-responsive img-thumbnail" width="100%" src="images/markinjapan.jpg" alt="">
                </div>
                <div class="col-12 col-md-6 col-lg-3">
                   <img class="img-responsive" width="100%" src="images/a2g.jpg" alt="">
@@ -47,9 +82,13 @@
          <div class="col-md-6 col-xs-12 col-lg-4">
             <div class="col-6">
                <h2>Welcome to ...</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab recusandae, veniam optio molestiae rerum voluptatibus sapiente eum similique saepe earum. Ex vel aspernatur quia aliquam ipsam doloremque quis error sit.</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas repellendus, neque illo itaque, eos saepe doloremque commodi facilis autem ratione, obcaecati mollitia omnis suscipit alias eligendi sequi soluta! Eum.</p>
-         </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab recusandae, veniam optio molestiae rerum
+                  voluptatibus sapiente eum similique saepe earum. Ex vel aspernatur quia aliquam ipsam doloremque quis
+                  error sit.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas repellendus, neque illo itaque, eos
+                  saepe doloremque commodi facilis autem ratione, obcaecati mollitia omnis suscipit alias eligendi sequi
+                  soluta! Eum.</p>
+            </div>
       </article>
       <footer>
 
