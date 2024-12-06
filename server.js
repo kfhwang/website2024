@@ -9,11 +9,15 @@ server.use(express.static(__dirname+"/AgencyProject"));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded());
 
+var fileUpload = require("express-fileupload");
+server.use(fileUpload({defCharset:'utf8', defParamCharset:'utf8'}));
+
 
 var DB = require("nedb-promises");
 var ProfolioDB = DB.create(__dirname+"/profolio.db");
 var ContactDB = DB.create(__dirname+"/contact.db");
  
+
 // ProfolioDB.insert([
 //     { modal: "#portfolioModal1", imgSrc: "modalroundicons.png", heading: "Round Icons", text: "Graphic Design" },
 //     { modal: "#portfolioModal2", imgSrc: "startup-framework.png", heading: "Startup Framework", text: "Website Design" },
